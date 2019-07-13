@@ -1,5 +1,5 @@
 {% set name = "fdb" %}
-{% set version = "2.0.0" %}
+{% set version = "2.0.1" %}
 {% set file_ext = "tar.gz" %}
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.{{ file_ext }}
-  sha256: 197313dad7d1f774c3c73ba7348a8b57c5c67eb50572bd352f0079696ee0cbdb
+  sha256: de5ef30c2583edd781d378db84b547ccc175518d8b978b84c46d5cc6c0d48484
 
 build:
   number: 0
