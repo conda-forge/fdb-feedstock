@@ -1,18 +1,17 @@
 {% set name = "fdb" %}
-{% set version = "2.0.1" %}
-{% set file_ext = "tar.gz" %}
+{% set version = "2.0.2" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.{{ file_ext }}
-  sha256: de5ef30c2583edd781d378db84b547ccc175518d8b978b84c46d5cc6c0d48484
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  sha256: c10c54028308dcd3d5f5f3afe8a4039cbbef22dcd3b041c30b643cf2f0d33120
 
 build:
   number: 0
-  script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv"
+  script: {{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv
   noarch: python
 
 requirements:
@@ -32,7 +31,7 @@ about:
   license: BSD
   license_family: BSD
   license_file: LICENSE.TXT
-  summary: 'The Python driver for Firebird'
+  summary: The Python driver for Firebird
   doc_url: http://fdb.readthedocs.io/en/v2.0/
   dev_url: https://github.com/FirebirdSQL/fdb
 
