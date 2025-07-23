@@ -18,10 +18,9 @@ requirements:
   host:
     - python {{ python_min }}
     - pip
-    - setuptools
+    - hatchling
   run:
     - python >={{ python_min }}
-    - future >=0.16.0
 
 test:
   requires:
