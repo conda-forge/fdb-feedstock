@@ -24,9 +24,12 @@ requirements:
 
 test:
   requires:
+    - pip
     - python {{ python_min }}
   imports:
     - fdb
+  commands:
+    - pip check
 
 about:
   home: https://www.firebirdsql.org/en/devel-python-driver/
