@@ -32,7 +32,7 @@ about:
   home: https://www.firebirdsql.org/en/devel-python-driver/
   license: BSD
   license_family: BSD
-  license_file: LICENSE.TXT
+  license_file: LICENSE
   summary: The Python driver for Firebird
   doc_url: http://fdb.readthedocs.io/en/v2.0/
   dev_url: https://github.com/FirebirdSQL/fdb
