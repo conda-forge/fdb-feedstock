@@ -1,5 +1,5 @@
 {% set name = "fdb" %}
-{% set version = "2.0.2" %}
+{% set version = "2.0.4" %}
 
 package:
   name: {{ name|lower }}
@@ -7,10 +7,10 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: c10c54028308dcd3d5f5f3afe8a4039cbbef22dcd3b041c30b643cf2f0d33120
+  sha256: 59530dbddde830f3edd7ac66b0449c72fcc04a4c0deeb8d08320f3309eba1b91
 
 build:
-  number: 1
+  number: 0
   script: {{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv
   noarch: python
 
